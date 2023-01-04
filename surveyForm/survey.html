@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<body>
+  <div class="" container>
+    <header class="header">
+      <h1 id="title" class="text-centre">End Of Term Survey Form</h1>
+      <p id="description" class="description text-centre">
+        Thank you for helping us improve the course
+      </p>
+    </header>
+
+    <form id="Survey">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required />
+      </div>
+      <div class="form-group">
+        <label id="Email" for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="foculty" for="foculty">Foculty</label>
+        <input id="foculty" type="text" placeholder="Foculty name" required />
+      </div>
+      <div class="form-group">
+        <label id="Academic year" for="academic year"
+          >Which option best describes you?
+        </label>
+        <select name="" id="dropdown" placeholder="" required>
+          <option disabled selected value>Select academic year</option>
+          <option value="option1">1st Year</option>
+          <option value="option1">2nd Year</option>
+          <option value="option1">3rd Year</option>
+          <option value="option1">4rth Year</option>
+          <option value="option1">graduate school</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Would you recommend this course to your friends?</p>
+        <label>
+          <input
+            type="radio"
+            name="user-recommend"
+            value="Definitely"
+            checked
+            class="input-radio"
+          />
+          Definitely
+        </label>
+        <label>
+          <input
+            id="radio"
+            value="maybe"
+            type="radio"
+            name="user-recommend"
+            class="input-radio"
+          />
+          May be
+        </label>
+        <label>
+          <input
+            id="radio"
+            value="not-sure"
+            type="radio"
+            name="user-recommend"
+            class="input-radio"
+          />
+          Not sure
+        </label>
+      </div>
+      <div class="form-group">
+        <p>What is your favourite thing about this course?</p>
+        <select name="best-feature" id="favourite">
+          <option disabled selected value="select-one">
+            Select one option
+          </option>
+          <option value="option1">Tutorials</option>
+          <option value="option2">Assignments</option>
+          <option value="option3">Labs</option>
+          <option value="option4">Lectures</option>
+          <option value="option5">Projects</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>What would you like to see improved?</p>
+        <label><input type="checkbox" />Tutorials </label>
+        <label><input type="checkbox" />checkbox2 </label>
+        <label><input type="checkbox" />checkbox3</label>
+        <label><input type="checkbox" />checkbox4 </label>
+        <label><input type="checkbox" />checkbox5</label>
+        <label><input type="checkbox" />checkbox6</label>
+      </div>
+      <div class="form-group">
+        <p>Any further comments or suggestions</p>
+        <textarea
+          name=""
+          id="comments"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit" type="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
